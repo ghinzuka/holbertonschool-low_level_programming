@@ -20,11 +20,10 @@ int main(void)
 	for (n = 'a'; n <= 'z'; n++)
 	{
 		putchar(n);
-
-		for (Up = 'A'; Up <= 'Z'; Up++)
-		{
-			putchar(Up);
-		}
+	}
+	for (Up = 'A'; Up <= 'Z'; Up++)
+	{
+		putchar(Up);
 	}
 
 	putchar('\n');
