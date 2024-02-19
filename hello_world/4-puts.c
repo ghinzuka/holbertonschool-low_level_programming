@@ -1,4 +1,13 @@
 #include<stdio.h>
+
+/**
+ * main - main functon
+ *
+ * Description: 'the function to write a char string with puts'
+ *
+ * Return: Always return  0
+ */
+
 int main(void)
 {
 
