@@ -14,12 +14,13 @@
 int main(void)
 
 {
-	int n;
+	char n;
 
-	for (n = 0; n < 26; n++)
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		putchar (n + '0');
+		putchar(n);
 	}
 
+	putchar('\n');
 	return (0);
 }
