@@ -14,15 +14,11 @@
 int main(void)
 
 {
-	int x;
+	int n;
 
-	for (x = 'A'; x <= 'Z'; x++)
-
+	for (n = 0; n < 10; n++)
 	{
-
-	x = tolower(x);
-	putchar(x);
-
+		putchar (n + '0');
 	}
 
 	return (0);
