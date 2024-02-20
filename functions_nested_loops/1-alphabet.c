@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - main functon
+ * print_alphabet - print the alphabet
  *
- * Description: 'print _putchar using write function.'
+ * Description: 'print the alphabet using while loop and _putchar proto'
  *
- * Return: Always return 0
+ * Return: void
  */
 
 void print_alphabet(void)
