@@ -23,12 +23,12 @@ int main(void)
 
 	putchar('0' + m);
 
+	}
+
 	for (n = 'a'; n <= 'f'; n++)
 
 	{
 		putchar(n);
-
-	}
 
 	}
 
