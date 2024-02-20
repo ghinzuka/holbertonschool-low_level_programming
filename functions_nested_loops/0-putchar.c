@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - main functon
@@ -7,8 +8,6 @@
  *
  * Return: Always return  0
  */
-
-int write(int filedes, const char *buf, unsigned int nbyte);
 
 int main(void)
 {
