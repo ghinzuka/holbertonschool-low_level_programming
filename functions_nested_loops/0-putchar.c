@@ -1,20 +1,13 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
-#include <ctype.h>
+#include <unistd.h>
 
 /**
- * main - main functon
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
- * Description: 'print the alphabet in lowercase except q & e'
- *
- * Return: Always return  0
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
-int main(void)
-
+int _putchar(char c)
 {
-	printf("_putcharn");
-
-	return (0);
+	return (write(1, &c, 1));
 }
