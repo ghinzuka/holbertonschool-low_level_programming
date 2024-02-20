@@ -1,13 +1,17 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * main - main functon
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Description: 'print _putchar using  write function.'
+ *
+ * Return: Always return  0
  */
-int _putchar(char c)
+
+int write(int filedes, const char *buf, unsigned int nbyte);
+
+int main(void)
 {
-	return (write(1, &c, 1));
+	write(1, "Hello World\n", 13);
+	return (0);
 }
