@@ -14,5 +14,6 @@ int r;
 	for (n = 0; n <= 10; n++)	
 	{
 		r = n * 9;
-		return (r);
+		_putchar(r +'0');
+	}
 }
