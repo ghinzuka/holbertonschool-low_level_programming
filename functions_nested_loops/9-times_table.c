@@ -24,19 +24,23 @@ int b;
 			{
 			b = result % 10;
 			a = (result - b) / 10;
+			
+			_putchar(32);
+			_putchar(44);
 			_putchar(a +'0');
 			_putchar(b +'0');
-			_putchar(44);
-			_putchar(32);
 			}
 			else
 			{
-				_putchar(result +'0');
+				if ( result != 0)
+				{
+				_putchar(32);
 				_putchar(44);
-				_putchar(32);
-				_putchar(32);
+				_putchar(44);
+				_putchar(result +'0');
+				}
 
-
+			_putchar(result + '0');
 			}
 
 		}
