@@ -2,7 +2,6 @@
 
 /**
  * times_table - print all time tables starting from 0
- * @r: number to check
  */
 
 void times_table(void)
