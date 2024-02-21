@@ -2,8 +2,6 @@
 
 /**
  * jack_bauer - show every minute from 00:00 to 23:59
- * @first: hours
- * @second: Minutes
  * Return: 0 if code ok
  */
 
