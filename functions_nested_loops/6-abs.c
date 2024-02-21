@@ -5,11 +5,10 @@
  *
  * Description: 'check if c is an alphabetical character'
  *
- *@r : variable a cacluler
  * always return 0
  */
 
-int _abs(int r)
+int _abs(int)
 {
 	if (r < 0)
 	{
