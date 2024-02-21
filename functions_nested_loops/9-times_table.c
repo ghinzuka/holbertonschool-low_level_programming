@@ -19,5 +19,6 @@ int result;
 		{
 		result = n * r;
 		_putchar(result +'0');
+		}
 	}
 }
