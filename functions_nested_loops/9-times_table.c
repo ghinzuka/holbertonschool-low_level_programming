@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * _abs - check for absolute value
- * Descriptio: 'check if c is an alphabetical character'
+ * times_table - print all time tables starting from 0
  * @r: number to check
- * Return: 0 if code ok
  */
 
 void times_table(void)
