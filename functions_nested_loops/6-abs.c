@@ -2,9 +2,9 @@
 
 /**
  * _abs - check for absolute value
- * Description: 'check if c is an alphabetical character'
- * @r : number to check
- * always return 0
+ * Descriptio: 'check if c is an alphabetical character'
+ * @r: number to check
+ * Return: 0 if code ok
  */
 
 int _abs(int r)
