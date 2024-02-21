@@ -13,9 +13,9 @@ int n;
 int r;
 int result;
 
-	for (n = 0; n < 10; n++)	
+	for (n = 0; n <= 9; n++)	
 	{
-		for (r = 0; r < 10; r++)
+		for (r = 0; r <= 9; r++)
 		{
 		result = n * r;
 		_putchar(result +'0');
