@@ -18,7 +18,7 @@ int result;
 		for (r = 0; r <= 9; r++)
 		{
 		result = n * r;
-		return (result);
+		_putchar(result +'0');
 		_putchar('\n');
 		}
 	}
