@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * jack_bauer - show every minute from 00:00 to 23:59
- * Return: 0 if code ok
+ * print_to_98 - print all int number from n to 98
+ * @n: entered value
  */
 
 void print_to_98(int n)
@@ -15,17 +15,14 @@ void print_to_98(int n)
 		{
 			if (n > 98)
 			{
-			printf ("%d, ", n);
+			printf("%d, ", n);
 			}
 			else
 			{
-				printf ("%d", n);
+				printf("%d", n);
 			}
 			n--;
 		}
-
-
-	
 	}
 	else if (n < 98)
 	{
@@ -33,18 +30,18 @@ void print_to_98(int n)
 		{
 			if (n < 98)
 			{
-			printf ("%d, ", n);
+			printf("%d, ", n);
 			}
 			else
 			{
-				printf ("%d", n);
+				printf("%d", n);
 			}
 			n++;
 		}
 	}
 	else if (n == 98)
 	{
-		printf ("%d", n);
+		printf("%d", n);
 	}
-	printf ("\n");
+	printf("\n");
 }
