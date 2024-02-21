@@ -39,7 +39,8 @@ int b;
 
 
 			}
-		_putchar('\n');
+
 		}
+		_putchar('\n');
 	}
 }
