@@ -37,11 +37,10 @@ int b;
 				_putchar(32);
 				_putchar(32);
 				_putchar(44);
-				_putchar(result +'0');
 				}
-
+			_putchar(result +'0');
 			}
-		_putchar(result +'0');
+
 		}
 		_putchar('\n');
 	}
