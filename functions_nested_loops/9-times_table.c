@@ -32,7 +32,7 @@ int b;
 			}
 			else
 			{
-				if ( result != 0)
+				if (n != 0)
 				{
 				_putchar(44);
 				_putchar(32);
