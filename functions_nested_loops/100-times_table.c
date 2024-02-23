@@ -16,7 +16,7 @@ int c;
 	{
 	for (c = 0; c <= n; c++)
 	{
-		for (r = 0; r <= n; r++)
+		for (r = 0; r <= n -1; r++)
 		{
 			result = c * r;
 			b = result % 10;
