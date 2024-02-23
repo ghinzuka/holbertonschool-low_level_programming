@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+/**
+ * main - write a string
+ *
+ * Return: return 1
+ */
 
 int main(void)
 {
