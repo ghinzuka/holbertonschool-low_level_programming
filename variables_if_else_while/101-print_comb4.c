@@ -5,7 +5,7 @@
 /**
  * main - main functon
  *
- * Description: 'prints all possible different combinations of two digits.'
+ * Description: 'prints all possible different combinations of three digits.'
  *
  * Return: Always return  0
  */
@@ -31,9 +31,7 @@ int main(void)
 					putchar(44);
 					putchar(32);
 					}
-
 			}
-
 		}
 	}
 	putchar('\n');
