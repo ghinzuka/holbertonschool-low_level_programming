@@ -18,19 +18,18 @@ int main(void)
 
 	for (n = 0; n <= 9; n++)
 	{
-		for (m = (n + 1); m <=9; m++)
+		for (m = (n + 1); m <= 9; m++)
 		{
 			if (n != m)
 			{
 				putchar('0' + n);
 				putchar('0' + m);
 				if (n < 8)
-				{		
+				{
 				putchar(44);
 				putchar(32);
 				}
 			}
-				
 		}
 	}
 	putchar('\n');
