@@ -24,7 +24,7 @@ int t;
 			{
 			t = result / 100;
 			b = result % 10;
-			a = result % 100;
+			a = ((result / 10) % 10);
 			_putchar(44);
 			_putchar(32);
 			_putchar(t + '0');
