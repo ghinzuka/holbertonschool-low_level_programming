@@ -12,8 +12,6 @@ int c;
 int a;
 int b;
 int t;
-int i;
-int l;
 
 	if (n < 15 || n > 0)
 	{
@@ -22,75 +20,40 @@ int l;
 		for (r = 0; r <= n; r++)
 		{
 			result = c * r;
-			   if (result > 9999)
-                        {
-			l = result / 10000;	
-                        i = ((result / 1000)) % 10;
-                        t = ((result / 100) % 10);
-                        a = ((result / 10) % 10);
-                        b = result % 10;
-                        _putchar(44);
-                        _putchar(32);
-			_putchar(l + '0');
-                        _putchar(i + '0');
-                        _putchar(t + '0');
-                        _putchar(a + '0');
-                        _putchar(b + '0');
-                        }
-			   if (result > 999)
-                        {
-			i = result / 1000;
-                        t = ((result / 100) % 10);
-			a = ((result / 10) % 10);
-                        b = result % 10;
-                        _putchar(44);
-			_putchar(32);
-			_putchar(32);
-			_putchar(i + '0');
-                        _putchar(t + '0');
-                        _putchar(a + '0');
-                        _putchar(b + '0');
-                        }
-
-			if (result > 99)
-			{
-			t = result / 100;
-			b = result % 10;
-			a = ((result / 10) % 10);
-			_putchar(44);
-			_putchar(32);
-			_putchar(t + '0');
-			_putchar(a + '0');
-			_putchar(b + '0');
-			}
-
-
-				else if (result > 9)
-			{
-			b = result % 10;
-			a = (result - b) / 10;
-			_putchar(44);
-			_putchar(32);
-			_putchar(32);
-			_putchar(a + '0');
-			_putchar(b + '0');
-			}
-				else
+				if (result > 99)
 				{
-				if (r != 0)
-					{
-					_putchar(44);
-					_putchar(32);
-					_putchar(32);
-					_putchar(32);
-					} 
-				_putchar(result + '0');
+				t = result / 100;
+				b = result % 10;
+				a = ((result / 10) % 10);
+				_putchar(44);
+				_putchar(32);
+				_putchar(t + '0');
+				_putchar(a + '0');
+				_putchar(b + '0');
 				}
+					else if (result > 9)
+				{
+				b = result % 10;
+				a = (result - b) / 10;
+				_putchar(44);
+				_putchar(32);
+				_putchar(32);
+				_putchar(a + '0');
+				_putchar(b + '0');
+				}
+					else
+					{
+					if (r != 0)
+						{
+						_putchar(44);
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+						}
+					_putchar(result + '0');
+					}
 		}
 		_putchar('\n');
 	}
-	}
-	else
-	{
 	}
 }
