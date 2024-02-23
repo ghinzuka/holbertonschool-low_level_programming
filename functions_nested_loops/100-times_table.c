@@ -9,6 +9,8 @@ void print_times_table(int n)
 int r;
 int result;
 int c;
+int a;
+int b;
 
 	if (n < 15 || n > 0)
 	{
