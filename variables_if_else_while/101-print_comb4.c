@@ -22,7 +22,7 @@ int main(void)
 		for (n = (s + 1); n <= 9; n++)
 		{
 			for (m = (n + 1); m <= 9; m++)
-			{	
+			{
 					putchar('0' + s);
 					putchar('0' + n);
 					putchar('0' + m);
