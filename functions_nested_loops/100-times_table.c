@@ -16,13 +16,10 @@ int c;
 	{
 	for (c = 0; c <= n; c++)
 	{
-		for (r = 0; r <= n -1; r++)
+		for (r = 0; r <= n; r++)
 		{
 			result = c * r;
-			b = result % 10;
-			a = (result - b) / 10;
-			_putchar(a + '0');
-			_putchar(b + '0');
+			_putchar(result + '0');
 
 		}
 		_putchar('\n');
