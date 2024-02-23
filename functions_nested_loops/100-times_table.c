@@ -28,7 +28,6 @@ int i;
                         b = result % 10;
                         a = ((result / 10) % 10);
                         _putchar(44);
-                        _putchar(32);
 			_putchar(i + '0');
                         _putchar(t + '0');
                         _putchar(a + '0');
