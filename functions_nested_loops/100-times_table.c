@@ -4,19 +4,19 @@
  * times_table - print all time tables starting from 0
  */
 
-void print_times_table(int n);
+void print_times_table(int n)
 {
-int r = 0;
+int r;
 int result;
 int a;
 int b;
-int c = 0;
+int c;
 
 	if (n > 15 || n < 0)
 	{
-	for (c; c <= n; c++)
+	for (c = 0; c <= n; c++)
 	{
-		for (r; r <= n; r++)
+		for (r = 0; r <= n; r++)
 		{
 		result = c * r;
 			if (result > 9)
