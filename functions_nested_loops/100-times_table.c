@@ -21,8 +21,6 @@ int c;
 			result = c * r;
 			b = result % 10;
 			a = (result - b) / 10;
-			_putchar(44);
-			_putchar(32);
 			_putchar(a + '0');
 			_putchar(b + '0');
 
