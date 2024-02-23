@@ -12,7 +12,7 @@ int a;
 int b;
 int c;
 
-	if (n > 15 || n < 0)
+	if (n < 15 || n > 0)
 	{
 	for (c = 0; c <= n; c++)
 	{
