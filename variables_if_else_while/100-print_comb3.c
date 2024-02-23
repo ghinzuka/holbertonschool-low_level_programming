@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-#include <ctype.h>
 
 /**
  * main - main functon
@@ -25,11 +24,16 @@ int main(void)
 			{
 				putchar('0' + n);
 				putchar('0' + m);
+				if (n < 8)
+				{		
 				putchar(44);
 				putchar(32);
+				}
 			}
+				
 		}
 	}
+	putchar('\n');
 	return (0);
 }
 
