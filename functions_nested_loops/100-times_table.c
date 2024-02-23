@@ -13,6 +13,7 @@ int a;
 int b;
 int t;
 int i;
+int l;
 
 	if (n < 15 || n > 0)
 	{
@@ -21,6 +22,21 @@ int i;
 		for (r = 0; r <= n; r++)
 		{
 			result = c * r;
+			   if (result > 9999)
+                        {
+			l = result / 10000;	
+                        i = ((result / 1000)) % 10;
+                        t = ((result / 100) % 10);
+                        a = ((result / 10) % 10);
+                        b = result % 10;
+                        _putchar(44);
+                        _putchar(32);
+			_putchar(l + '0');
+                        _putchar(i + '0');
+                        _putchar(t + '0');
+                        _putchar(a + '0');
+                        _putchar(b + '0');
+                        }
 			   if (result > 999)
                         {
 			i = result / 1000;
