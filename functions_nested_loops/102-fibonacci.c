@@ -18,7 +18,7 @@ printf("%lu, ", b);
 
 	for (i = 3; i < 51; i++)
 	{
-		if i == 50
+		if (i == 50)
 		{
 		resultat = a + b;
 		printf("%lu \n", resultat);
