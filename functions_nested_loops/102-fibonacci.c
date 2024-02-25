@@ -1,23 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - Lists all multiples of 3 or 5.
+ * main - print tbhe first digits of the fibonacci sequence
  *
  * Return: Always 0.
  */
 
 int main(void)
 {
-	int i;
-	int resultat = 0;
-	int a = 1;
+int i;
+long int resultat = 0;
+long int a = 1;
+long int b = 2;
+
+printf("%lu, ", a);
+printf("%lu, ", b);
 
 	for (i = 0; i < 51; i++)
 	{
-		resultat = a + resultat;
-		printf("%d, ", resultat);
-		a = resultat - a; 
-	
+		resultat = a + b;
+		printf("%lu, ", resultat);
+		a = b;
+		b = resultat;
 	}
 
 	return (0);
