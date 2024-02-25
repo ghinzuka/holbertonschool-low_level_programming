@@ -18,10 +18,20 @@ printf("%lu, ", b);
 
 	for (i = 3; i < 51; i++)
 	{
+		if i == 50
+		{
+		resultat = a + b;
+		printf("%lu \n", resultat);
+		a = b;
+		b = resultat;
+		}
+		else
+		{
 		resultat = a + b;
 		printf("%lu, ", resultat);
 		a = b;
 		b = resultat;
+		}
 	}
 
 	return (0);
