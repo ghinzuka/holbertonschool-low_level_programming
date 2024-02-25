@@ -21,7 +21,7 @@ printf("%lu, ", b);
 		if (i == 50)
 		{
 		resultat = a + b;
-		printf("%lu \n", resultat);
+		printf("%lu\n", resultat);
 		a = b;
 		b = resultat;
 		}
