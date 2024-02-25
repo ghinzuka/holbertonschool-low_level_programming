@@ -16,7 +16,7 @@ long int b = 2;
 printf("%lu, ", a);
 printf("%lu, ", b);
 
-	for (i = 0; i < 51; i++)
+	for (i = 3; i < 51; i++)
 	{
 		resultat = a + b;
 		printf("%lu, ", resultat);
