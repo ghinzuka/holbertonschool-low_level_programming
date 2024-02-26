@@ -12,16 +12,15 @@ void print_triangle(int size)
 {
 	int i;
 	int b;
-	int space = size;
+	int space;
 
 	if (size >= 0)
 	{
 		for (i = 1; i <= size; i++)
 		{
-			while (space > 0)
+			for (space = size; space < 0; space--)
 			{
 				_putchar(' ');
-				space--;
 			}
 			for (b = 1; b <= i; b++)
 			{
