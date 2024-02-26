@@ -13,13 +13,16 @@ if (n > 0)
 {
 	for (i = 1; i <= n; i++)
 	{
+		for (j = 0; j < i; j++)
+		{
+			if (j != 0)
+			{
+				_putchar(' ');
+			}
+		}
 		_putchar('\\');
 		_putchar('\n');
 
-		for (j = 0; j < i; j++)
-		{
-			_putchar(' ');
-		}
 	}
 }
 else
