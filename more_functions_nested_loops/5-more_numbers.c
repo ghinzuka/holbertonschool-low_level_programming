@@ -15,7 +15,11 @@ int b;
 	{
 		for (b = 0; b <= 14; b++)
 		{
-			_putchar('0' + b);
+			if (b >= 10)
+			{
+				_ptuchar('0' + (b / 10));
+			}
+			_putchar('0' + (b % 10));
 		}
 	_putchar('\n');
 	}
