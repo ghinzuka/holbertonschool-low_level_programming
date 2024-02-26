@@ -18,10 +18,7 @@ if (n > 0)
 
 		for (j = 1; j <= n; j++)
 		{
-			if (j >= 2)
-			{
-				_putchar(' ');
-			}
+			_putchar(' ');
 		}
 	}
 }
