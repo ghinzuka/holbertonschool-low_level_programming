@@ -2,14 +2,15 @@
 #include <stdio.h>
 
 /**
- * main - print number from 0 to 100 remplacing some of the resulte by string 
+ * main - print number from 0 to 100 remplacing some of the resulte by string
  *
- * @i: number to print
+ * Return: return 0
  */
 
-int main (void)
+int main(void)
 {
 	int i;
+
 	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 3) == 0 && (i % 5) == 0)
@@ -24,15 +25,15 @@ int main (void)
 		{
 			printf("Buzz");
 		}
-		else 
+		else
 		{
 			printf("%d", i);
 		}
-		if (i < 100)
+		if (i != 100)
 		{
 			printf(" ");
 		}
 	}
-
+	printf("\n");
 	return (0);
 }
