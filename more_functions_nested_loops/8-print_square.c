@@ -15,10 +15,6 @@ if (size > 0)
 	{
 		for (j = 0; j < i; j++)
 		{
-			if (j != 0)
-			{
-				_putchar(' ');
-			}
 			_putchar('#');
 		}
 		_putchar('\n');
