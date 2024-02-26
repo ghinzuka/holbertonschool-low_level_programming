@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_square - print a diagonale of \  n times
- * @n: number of lines
+ * print_square - print a square of #
+ * @size: size of square
  */
 
 void print_square(int size)
