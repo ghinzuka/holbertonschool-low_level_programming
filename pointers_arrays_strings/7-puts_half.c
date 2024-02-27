@@ -18,7 +18,7 @@ int i = 0;
 	}
 	else
 	{
-		i = (len - 1) / 2;
+		i = (len + 1) / 2;
 	}
 	while (i < len)
 	{
