@@ -12,17 +12,17 @@ int i = 0;
 	{
 		;
 	}
-	i = len / 2;
+	if ((len % 2) == 0)
+	{
+		i = len / 2;
+	}
+	else
+	{
+		i = (len - 1) / 2;
+	}
 	while (i < len)
-	{	
-		if ((str[i] % 2) != 0)
-		{
-			_putchar(str[(len - 1) / 2]);
-		}
-		else
-		{
+	{
 		_putchar(str[i]);
-		}
 		i++;
 	}
 
