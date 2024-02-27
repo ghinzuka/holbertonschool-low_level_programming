@@ -9,7 +9,7 @@
 void print_rev(char *s)
 {
 	int i = 0;
-	int lenght = 1;
+	int lenght = 0;
 
 	while (*s++)
 	{
@@ -17,7 +17,7 @@ void print_rev(char *s)
 	}
 	i = lenght;
 
-		while (i >= 0)
+		while (i > 0)
 		{
 			_putchar(*s);
 			i--;
