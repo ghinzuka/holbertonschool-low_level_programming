@@ -9,7 +9,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *newdest = dest;
+	char *pointdest = dest;
 
 	while (*src != '\0')
 	{
@@ -18,5 +18,5 @@ char *_strcpy(char *dest, char *src)
 		dest++;
 	}
 	*dest = '\0';
-	return (newdest);
+	return (pointdest);
 }
