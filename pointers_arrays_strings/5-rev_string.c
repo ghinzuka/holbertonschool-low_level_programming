@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- *
- *
- *
- *
+ * rev_string - reverse a string
+ * @s: variable to check
  */
+
 void rev_string(char *s)
 {
 int i = 0;
