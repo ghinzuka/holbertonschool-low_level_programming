@@ -5,10 +5,11 @@
  * @dest: destination
  * @src: Source
  *
+ * Return: return the new destination
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *start = dest;
+	char *newdest = dest;
 
 	while (*src != '\0')
 	{
@@ -17,5 +18,5 @@ char *_strcpy(char *dest, char *src)
 		dest++;
 	}
 	*dest = '\0';
-	return (start);
+	return (newdest);
 }
