@@ -16,7 +16,7 @@ int j = 0;
 	{
 		i++;
 	}
-	while (src[j] < i)
+	while (src[j] <= i)
 	{
 		dest[j + i] = src[j];
 		j++;
