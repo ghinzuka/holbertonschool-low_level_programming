@@ -16,10 +16,12 @@ int j = 0;
 	{
 		i++;
 	}
-	while (src[j] <= i)
+	while (src[j] != '\0')
 	{
-		dest[j + i] = src[j];
+		dest[i] = src[j];
 		j++;
+		i++;
+
 	}
 	return (dest);
 }
