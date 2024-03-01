@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *
- *
- *
+ * _atoi - function that chang a String into an INT
+ * @s: text to change
+ * Return: return the numbers
  */
 int _atoi(char *s)
 {
@@ -25,5 +25,5 @@ int _atoi(char *s)
 		num = num * 10 + *letter - '0';
 		letter++;
 	}
-return (num * minus);	
+return (num * minus);
 }
