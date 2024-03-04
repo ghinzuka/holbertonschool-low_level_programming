@@ -16,22 +16,19 @@ for (j = 0; needle[j] != '\0'; j++)
 }
 while (*haystack)
 {
-	for (i = 0; needle[i] != '\0'; i++)
+	if (j > 0 && haystack[j - 1] == '\0')
 	{
-		if (haystack[i] != needle[i])
-		{
-			break;
-		}
+		return ('\0');
 	}
-
-		if (i != j)
-		{
-			haystack++;
-		}
-		else
-		{
-			return (haystack);
-		}
+	while (needle[i] != '\0' && haystack[i] == needle[i])
+	{
+		i++;
+	}
+	if (needle[i] == '\0')
+	{
+		return (haystack);
+	}
+	haystack++;
 }
 return ('\0');
 }
