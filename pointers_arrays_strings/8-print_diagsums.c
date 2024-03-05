@@ -10,8 +10,8 @@ void print_diagsums(int *a, int size)
 {
 int i;
 int j;
-int diag1;
-int diag2;
+int diag1 = 0;
+int diag2 = 0;
 
 for (i = 0; i < size; i++)
 {
