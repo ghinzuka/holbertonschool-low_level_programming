@@ -19,6 +19,10 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", result);
 	}
-	printf("Error\n");
-	return (1);
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
+return (0);
 }
