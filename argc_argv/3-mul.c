@@ -2,14 +2,14 @@
 #include <stdio.h>
 /**
  * main - function that multpily two numbers
- * @argv: array 
+ * @argv: array
  * @argc: numbers of argv
+ * Return: 1 if not ok
  */
 int main(int argc, char *argv[])
 {
 	int i;
 	int result = 1;
-
 
 	if (argc > 0 && argc > 2)
 	{
@@ -19,5 +19,6 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", result);
 	}
+	printf("Error\n");
 	return (1);
 }
