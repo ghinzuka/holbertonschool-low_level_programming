@@ -5,7 +5,7 @@
  * main - add two positives number
  * @argc: number of argument
  * @argv: array of argc
- * Result: 0 if ok 1 if not
+ * Return: 0 if ok 1 if not
  */
 int main(int argc, char *argv[])
 {
@@ -21,10 +21,10 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
-			if(!isdigit(argv[i][j]))
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
-                                return (1);
+				return (1);
 			}
 		}
 		result += atoi(argv[i]);
