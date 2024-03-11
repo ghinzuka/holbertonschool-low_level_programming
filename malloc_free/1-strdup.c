@@ -25,7 +25,7 @@ if (mess == 0)
 {
 	return (NULL);
 }
-	for (i = 0; i < len; i++)
+	for (i = 0; str[i]; i++)
 	{
 		mess[i] = str[i];
 	}
