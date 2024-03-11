@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * str_concat : Write a function that concatenates two strings
+ * str_concat - Write a function that concatenates two strings
  * @s1: string1
  * @s2: string2
  * Return: return NULL or the string
@@ -13,38 +13,38 @@ char *str_concat(char *s1, char *s2)
 	int len1 = 0;
 	char *mess;
 
-if (s1 == NULL)
-{
-s1 = "";
-}
-if (s2 == NULL)
-{
-	s2 = "";
-}
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 
-for (i = 0; s2[i]; i++)
-{
-	len++;
-}
-for (i = 0; s1[i]; i++)
-{
-	len1++;
-}
+	for (i = 0; s2[i]; i++)
+	{
+		len++;
+	}
+	for (i = 0; s1[i]; i++)
+	{
+		len1++;
+	}
 
-lentotale = len + len1 + 1;
+	lentotale = len + len1 + 1;
 
-mess = malloc(sizeof(char) * lentotale);
-if (mess == NULL)
-{
-	return (NULL);
-}
-for (i = 0; i < len1; i++)
-{
-	mess[i] = s1[i];
-}
-for (i = 0; i < len; i++)
-{
-	mess[i + len1] = s2[i];
-}
+	mess = malloc(sizeof(char) * lentotale);
+	if (mess == 0)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < len1; i++)
+	{
+		mess[i] = s1[i];
+	}
+	for (i = 0; i < len; i++)
+	{
+		mess[i + len1] = s2[i];
+	}
 return (mess);
 }
