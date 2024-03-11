@@ -14,7 +14,7 @@ for (i = 0; str[i]; i++)
 {
 	len++;
 }
-if (str == NULL)
+if (str == 0)
 {
 	return (NULL);
 }
