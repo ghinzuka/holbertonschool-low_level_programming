@@ -31,7 +31,7 @@ for (i = 0; s1[i]; i++)
 	len1++;
 }
 
-lentotale = len + len1 + 1;
+lentotale = len + len1;
 
 mess = malloc(sizeof(char) * lentotale);
 if (mess == NULL)
