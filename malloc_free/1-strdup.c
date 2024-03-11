@@ -19,7 +19,7 @@ for (i = 0; str[i]; i++)
 	len++;
 }
 
-mess = malloc(sizeof(char) * len);
+mess = malloc(sizeof(char) * len + 1);
 
 if (mess == 0)
 {
