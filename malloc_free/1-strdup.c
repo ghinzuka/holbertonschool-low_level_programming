@@ -10,16 +10,17 @@ int i;
 int len;
 char *mess;
 
-for (i = 0; str[i]; i++)
-{
-	len++;
-}
 if (str == 0)
 {
 	return (NULL);
 }
+for (i = 0; str[i]; i++)
+{
+	len++;
+}
 
 mess = malloc(sizeof(char) * len);
+
 if (mess == 0)
 {
 	return (NULL);
