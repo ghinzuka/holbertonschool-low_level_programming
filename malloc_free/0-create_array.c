@@ -16,12 +16,13 @@ char *create_array(unsigned int size, char c)
 	}
 
 	b = malloc(sizeof(char) * size);
-
+	if (b == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i < size; i++)
 	{
 		b[i] = c;
 	}
-
-free(b);
 return (b);
 }
