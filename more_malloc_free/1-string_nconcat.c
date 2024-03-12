@@ -47,7 +47,7 @@ char *mem;
 	{
 		mem[memlen++] = s1[i];
 	}
-	for (i = 0; s2[i] || i < n; i++)
+	for (i = 0; s2[i] && i < n; i++)
 	{
 		mem[memlen++] = s2[i];
 	}
