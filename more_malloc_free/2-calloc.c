@@ -31,6 +31,5 @@ else
 		mem[i] = 0;
 	}
 }
-free(mem);
 return (mem);
 }
