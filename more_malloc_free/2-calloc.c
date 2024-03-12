@@ -19,7 +19,7 @@ if (size == 0)
 	return (NULL);
 }
 
-mem = malloc(nmemb * sizeof(size));
+mem = malloc(nmemb * size);
 if (mem == NULL)
 {
 	return (NULL);
