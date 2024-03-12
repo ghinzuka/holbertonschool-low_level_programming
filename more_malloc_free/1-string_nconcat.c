@@ -12,7 +12,7 @@ unsigned int i;
 unsigned int memlen = 0;
 unsigned int len1 = 0;
 unsigned int len2 = 0;
-/*unsigned int lentotale = 0;*/
+unsigned int lentotale = 0;
 char *mem;
 	if (s1 == NULL)
 	{
@@ -26,14 +26,14 @@ char *mem;
 	{
 		len1++;
 	}
-	for (i = 0; s2[i]; i++)
+	for (i = 0; i < n; i++)
 	{
 		len2++;
 	}
 
-	/*lentotale = len1 + len2;*/
+	lentotale = len1 + len2;
 
-	mem = malloc(sizeof(char) * (len1 + 1));
+	mem = malloc(sizeof(char) * (lentotale + 1));
 	if (mem == NULL)
 	{
 		return (NULL);
