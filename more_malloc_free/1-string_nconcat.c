@@ -30,20 +30,15 @@ char *mem;
 	{
 		len2++;
 	}
-	if (len2 >= n)
-	{
-		lentotale = len1 + len2;
-	}
-	else
-	{
-		lentotale = len1 + n;
-	}
+
+	lentotale = len1 + len2;
+
 	mem = malloc(sizeof(char) * (lentotale + 1));
 	if (mem == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0;s1[i] ; i++)
+	for (i = 0; s1[i]; i++)
 	{
 		mem[memlen++] = s1[i];
 	}
