@@ -8,6 +8,9 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+if (name == NULL || age < 0 || owner == NULL)
+return (NULL);
+
 dog_t *firstdog;
 
 unsigned int len1 = 0, len2 = 0, i = 0;
