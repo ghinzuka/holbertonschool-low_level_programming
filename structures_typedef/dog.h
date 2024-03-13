@@ -19,7 +19,7 @@ char *owner;
 };
 
 /**
- *dogt_t - new typedef for dog
+ *dog_t - new typedef for dog
  */
 
 typedef struct dog dog_t;
