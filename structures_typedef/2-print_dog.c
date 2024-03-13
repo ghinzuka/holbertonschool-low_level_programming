@@ -2,12 +2,13 @@
 /**
  * print_dog - Write a function that prints a struct dog
  * @d: structure to print
+ * Return: nothing if D is null
  */
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		printf(" ");
+		return;
 	}
 	else if (d->name == NULL)
 	{
