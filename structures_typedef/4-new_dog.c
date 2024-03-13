@@ -11,13 +11,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 dog_t *firstdog;
 unsigned int len1, len2, i = 0;
 
-if (name == NULL || age < 0 || owner == NULL)
-	return (NULL);
-
 while (name[len1])
-        len1++;
-    while (owner[len2])
-        len2++;
+	len1++;
+while (owner[len2])
+	len2++;
 
 firstdog = malloc(sizeof(dog_t));
 if (firstdog == NULL)
