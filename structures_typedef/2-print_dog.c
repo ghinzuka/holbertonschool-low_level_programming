@@ -13,7 +13,7 @@ return;
 printf("Name: ");
 if (d->name == NULL)
 {
-	printf("nil\n");
+	printf("(nil)\n");
 }
 else
 {
@@ -23,7 +23,7 @@ else
 printf("Age: ");
 if (d->age < 0)
 {
-	printf("nil\n");
+	printf("(nil)\n");
 }
 else
 {
@@ -33,7 +33,7 @@ else
 printf("Owner: ");
 if (d->owner == NULL)
 {
-	printf("nil\n");
+	printf("(nil)\n");
 }
 else
 {
