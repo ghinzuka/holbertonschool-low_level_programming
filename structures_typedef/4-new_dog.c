@@ -14,10 +14,10 @@ unsigned int len1, len2, i = 0;
 if (name == NULL || age < 0 || owner == NULL)
 	return (NULL);
 
-for (i = 0; name[i]; i++)
-	len1++;
-for (i = 0; owner[i]; i++)
-	len2++;
+while (name[len1])
+        len1++;
+    while (owner[len2])
+        len2++;
 
 firstdog = malloc(sizeof(dog_t));
 if (firstdog == NULL)
