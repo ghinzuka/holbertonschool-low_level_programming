@@ -19,13 +19,11 @@ while (owner[len2])
 firstdog = malloc(sizeof(dog_t));
 if (firstdog == NULL)
 	return (NULL);
+
 firstdog->age = age;
 firstdog->name = malloc((len1 + 1) * sizeof(name));
 if (firstdog->name == NULL)
-{
-	free(firstdog);
 	return (NULL);
-}
 
 for (i = 0; i < len1; i++)
 	firstdog->name[i] = name[i];
@@ -33,11 +31,7 @@ firstdog->name[len1] = '\0';
 
 firstdog->owner = malloc((len2 + 1) * sizeof(owner));
 if (firstdog->owner == NULL)
-{
-free(firstdog->anme);
-free(firstdog);
 return (NULL);
-}
 
 for (i = 0; i < len2; i++)
 	firstdog->owner[i] = owner[i];
