@@ -9,7 +9,8 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *firstdog;
-unsigned int len1, len2, i = 0;
+
+unsigned int len1 = 0, len2 = 0, i = 0;
 
 while (name[len1])
 	len1++;
