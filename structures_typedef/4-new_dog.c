@@ -21,7 +21,7 @@ if (firstdog == NULL)
 	return (NULL);
 
 firstdog->age = age;
-firstdog->name = malloc((len1 + 1) * sizeof(name));
+firstdog->name = malloc((len1 + 1) * sizeof(char));
 if (firstdog->name == NULL)
 	return (NULL);
 
@@ -29,7 +29,7 @@ for (i = 0; i < len1; i++)
 	firstdog->name[i] = name[i];
 firstdog->name[len1] = '\0';
 
-firstdog->owner = malloc((len2 + 1) * sizeof(owner));
+firstdog->owner = malloc((len2 + 1) * sizeof(char));
 if (firstdog->owner == NULL)
 return (NULL);
 
