@@ -9,33 +9,38 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *firstdog;
-unsigned int len1 = 0, len2 = 0, i = 0;
+int i = 0, j = 0, k = 0;
 
-while (name[len1])
-	len1++;
-while (owner[len2])
-	len2++;
+while (name[i])
+	i++;
+while (owner[j])
+	j++;
 
 firstdog = malloc(sizeof(dog_t));
 if (firstdog == NULL)
+{
+	free(firstdog);
 	return (NULL);
+}
 
+firstdog->owner = malloc(j * sizeof(firstdog->owner));
 firstdog->age = age;
-firstdog->name = malloc((len1 + 1) * sizeof(char));
-if (firstdog->name == NULL)
+firstdog->name = malloc(i * sizeof(firstdog->name));
+
+
+if (firstdog->name == NULL || firstdog->owner == NULL)
+{
+	free(firstdog->owner);
+	free(firstdog->name);
+	free(firstdog);
 	return (NULL);
+}
 
-for (i = 0; i < len1; i++)
-	firstdog->name[i] = name[i];
-firstdog->name[len1] = '\0';
+for (k = 0; k <= i; k++)
+	firstdog->name[k] = name[k];
 
-firstdog->owner = malloc((len2 + 1) * sizeof(char));
-if (firstdog->owner == NULL)
-return (NULL);
-
-for (i = 0; i < len2; i++)
-	firstdog->owner[i] = owner[i];
-firstdog->owner[len2] = '\0';
+for (k = 0; k <= j; k++)
+	firstdog->owner[k] = owner[k];
 
 return (firstdog);
 }
