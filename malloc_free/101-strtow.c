@@ -32,28 +32,38 @@ char **c;
 		return (NULL);
 	}
 	count = 0;
+	i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
-		if (str[i] == ' ')
+		while (str[i] == ' ')
 		{
+			i++;
+		}
+		if (str[i] != '\0')
+		{
+			j = 0;
+			while (str[i] != ' ' && str[i] != '\0')
+			{
+				i++;
+				j++;
+			}
 			c[count] = (char *)malloc((j + 1) * sizeof(char));
 			if (c[count] == NULL)
 			{
+				for (k = 0; k < count; k++)
+					free(c[k]);
+				free(c);
 				return (NULL);
 			}
 			for (k = 0; k < j; k++)
-			{
-				c[count][k] = str[i - j + k];
-			}
-			c[count][j] = '\0';
-			count++;
-			j = 0;
-		}
-		else
-		{
-			j++;
+                        {
+                                c[count][k] = str[i - j + k];
+                        }
+                        c[count][j] = '\0';
+                        count++;
 		}
 	}
+c[count] = NULL;
 return (c);
 }
