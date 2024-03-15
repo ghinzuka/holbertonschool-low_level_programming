@@ -1,14 +1,16 @@
 #include "main.h"
+
 /**
- * strtow - Write a function that splits a string into words.
- * @str - string to splits
- * Return: the pointer to array of strings
+ * count_str - Count the number of words in a string.
+ * @str: The input string.
+ * Return: The number of words.
  */
-char **strtow(char *str)
+
+int count_str(char *str)
 {
-int i = 0, j = 0, k = 0;
-int count = 0;
-char **c;
+	int count = 0;
+	int i = 0;
+
 	while (str[i] != '\0')
 	{
 		while (str[i] == ' ')
@@ -20,9 +22,23 @@ char **c;
 				i++;
 		}
 	}
-	if (i == 0 || i == 1 || str == NULL)
-		return (NULL);
+return (count);
+}
 
+/**
+ * strtow - Write a function that splits a string into words.
+ * @str: string to splits
+ * Return: the pointer to array of strings
+ */
+char **strtow(char *str)
+{
+int i = 0, j = 0, k = 0;
+int count = 0;
+char **c;
+
+if (str == NULL)
+return (NULL);
+count = count_str(str);
 	c = (char **)malloc((count + 1) * sizeof(char *));
 	if (c == NULL)
 		return (NULL);
@@ -49,9 +65,7 @@ char **c;
 				return (NULL);
 			}
 			for (k = 0; k < j; k++)
-			{
 				c[count][k] = str[i - j + k];
-			}
 			c[count][j] = '\0';
 			count++;
 		}
