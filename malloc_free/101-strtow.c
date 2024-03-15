@@ -14,17 +14,19 @@ char **c;
 	{
 		return (NULL);
 	}
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
-		if (str[i] == ' ')
+		while (str[i] == ' ')
+			i++;
+		if (str[i] != '\0')
 		{
 			count++;
+			while (str[i] != ' ' && str[i] != '\0')
+				i++;
 		}
 	}
 
-	count++;
-
-	c = (char **)malloc(count * sizeof(char *));
+	c = (char **)malloc((count + 1) * sizeof(char *));
 	if (c == NULL)
 	{
 		return (NULL);
