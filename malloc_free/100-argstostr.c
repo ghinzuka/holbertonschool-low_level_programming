@@ -22,7 +22,7 @@ char *c;
 		}
 	}
 
-	c = malloc(sizeof(char) * len + 1);
+	c = malloc(sizeof(char) * len + 1 + ac);
 	if (c == NULL)
 	{
 		return (NULL);
