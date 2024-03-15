@@ -35,7 +35,7 @@ char *c;
 			c[len] = av[i][j];
 			len++;
 		}
-		²if (c[len] = '\0')
+		if (c[len] == '\0')
 		{
 		c[len++] = '\n';
 		}
