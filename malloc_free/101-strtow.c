@@ -6,19 +6,49 @@
  */
 char **strtow(char *str)
 {
-int i, j, len;
+int i = 0, j = 0, k = 0;
+int count = 0;
 char **c;
 
-	if (str == "" || str == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; str[len]; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		len++;
+		if (str[i] == ' ')
+		{
+			count++;
+		}
+		count++;
 	}
-	c = malloc(sizeof(char *) * len + 1)
-		if (c == NULL)
-			return (NULL);
 
+	c = (char **)malloc(count * sizeof(char *));
+	if (c == NULL)
+	{
+		return (NULL);
+	}
+	count = 0;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] == ' ')
+		{
+			c[count] = (char *)malloc((j + 1) * sizeof(char));
+			if (c == NULL)
+			{
+				return (NULL);
+			}
+			for (k = 0; k < j; k++)
+			{
+				c[count][k] = str[i - j + k];
+			}
+			c[count][j] = '\0';
+		}
+		else
+		{
+			j++;
+		}
+	}
+return (c);
 }
