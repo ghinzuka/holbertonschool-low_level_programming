@@ -35,10 +35,8 @@ char *c;
 			c[len] = av[i][j];
 			len++;
 		}
-		if (c[len] == '\0')
-		{
-		c[len++] = '\n';
-		}
+		c[len] = '\n';
+		len++;
 	}
 
 	return (c);
