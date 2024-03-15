@@ -10,7 +10,7 @@ int i = 0, j = 0, k = 0;
 int count = 0;
 char **c;
 
-	if (str == NULL || str == " ")
+	if (str == NULL)
 	{
 		return (NULL);
 	}
