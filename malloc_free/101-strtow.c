@@ -23,6 +23,9 @@ char **c;
 				i++;
 		}
 	}
+	if (i == 0)
+		return (NULL);
+
 	c = (char **)malloc((count + 1) * sizeof(char *));
 	if (c == NULL)
 		return (NULL);
