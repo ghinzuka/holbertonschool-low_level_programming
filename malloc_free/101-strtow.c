@@ -9,9 +9,6 @@ char **strtow(char *str)
 int i = 0, j = 0, k = 0;
 int count = 0;
 char **c;
-
-	if (str == NULL)
-		return (NULL);
 	while (str[i] != '\0')
 	{
 		while (str[i] == ' ')
@@ -23,7 +20,7 @@ char **c;
 				i++;
 		}
 	}
-	if (i == 0)
+	if (i == 0 || i == 1 || str == NULL)
 		return (NULL);
 
 	c = (char **)malloc((count + 1) * sizeof(char *));
