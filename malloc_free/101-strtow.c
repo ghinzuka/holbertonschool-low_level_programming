@@ -36,9 +36,10 @@ int i = 0, j = 0, k = 0;
 int count = 0;
 char **c;
 
-if (str == NULL)
 return (NULL);
 count = count_str(str);
+if (count == 0)
+	return (NULL);
 	c = (char **)malloc((count + 1) * sizeof(char *));
 	if (c == NULL)
 		return (NULL);
