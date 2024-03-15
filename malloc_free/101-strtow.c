@@ -20,8 +20,9 @@ char **c;
 		{
 			count++;
 		}
-		count++;
 	}
+
+	count++;
 
 	c = (char **)malloc(count * sizeof(char *));
 	if (c == NULL)
@@ -35,7 +36,7 @@ char **c;
 		if (str[i] == ' ')
 		{
 			c[count] = (char *)malloc((j + 1) * sizeof(char));
-			if (c == NULL)
+			if (c[count] == NULL)
 			{
 				return (NULL);
 			}
@@ -44,6 +45,8 @@ char **c;
 				c[count][k] = str[i - j + k];
 			}
 			c[count][j] = '\0';
+			count++;
+			j = 0;
 		}
 		else
 		{
