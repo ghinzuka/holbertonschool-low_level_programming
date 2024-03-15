@@ -22,7 +22,7 @@ char *c;
 		}
 	}
 
-	c = malloc(sizeof(char) * len);
+	c = malloc(sizeof(char) * len + 1);
 	if (c == NULL)
 	{
 		return (NULL);
@@ -35,7 +35,10 @@ char *c;
 			c[len] = av[i][j];
 			len++;
 		}
-			c[len++] = '\n';
+		²if (c[len] = '\0')
+		{
+		c[len++] = '\n';
+		}
 	}
 
 	return (c);
