@@ -11,9 +11,7 @@ int count = 0;
 char **c;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 	while (str[i] != '\0')
 	{
 		while (str[i] == ' ')
@@ -25,21 +23,15 @@ char **c;
 				i++;
 		}
 	}
-
 	c = (char **)malloc((count + 1) * sizeof(char *));
 	if (c == NULL)
-	{
 		return (NULL);
-	}
 	count = 0;
 	i = 0;
-
 	while (str[i] != '\0')
 	{
 		while (str[i] == ' ')
-		{
 			i++;
-		}
 		if (str[i] != '\0')
 		{
 			j = 0;
@@ -57,11 +49,11 @@ char **c;
 				return (NULL);
 			}
 			for (k = 0; k < j; k++)
-                        {
-                                c[count][k] = str[i - j + k];
-                        }
-                        c[count][j] = '\0';
-                        count++;
+			{
+				c[count][k] = str[i - j + k];
+			}
+			c[count][j] = '\0';
+			count++;
 		}
 	}
 c[count] = NULL;
