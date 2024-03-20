@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		if (f == NULL)
 		{
 			printf("Error\n");
-			exit(100);
+			exit(99);
 		}
 		printf("%d\n", f(num1, num2));
 		return (0);
