@@ -20,15 +20,14 @@ if (idx == 0)
 	return (add_dnodeint(h, n));
 }
 
-while (idx != 1 && temp && temp->next)
+while (idx != 1)
 {
 	temp = temp->next;
-	idx--;
 	if (temp == NULL)
 	{
 		return (NULL);
 	}
-
+	idx--;
 }
 if (temp->next == NULL)
 {
