@@ -1,4 +1,5 @@
 # C - Bit manipulation
+![bitwise](https://github.com/ghinzuka/holbertonschool-low_level_programming/assets/102736316/8aebc2ac-f567-4a34-b2db-8b619fe74927)
 
 ## Learning Objectives
 
