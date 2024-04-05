@@ -7,16 +7,19 @@
 */
 int create_file(const char *filename, char *text_content)
 {
-	int len, fo, fw;
+	int len = 0, fo, fw;
 
 	if (filename == NULL)
 	{
 		return (-1);
 	}
 
-	while (len[text_content])
+	if (text_content != NULL)
 	{
-		len++;
+		while (len[text_content])
+		{
+			len++;
+		}
 	}
 
 	fo = open(filename, O_CREAT | O_RDWR | O_TRUNC, S_IRUSR | S_IWUSR);
@@ -31,5 +34,6 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	close(fo);
+
 	return (1);
 }
